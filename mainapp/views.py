@@ -13,3 +13,5 @@ def products(request):
 
 def contact(request):
     return render(request, 'mainapp/contact.html')
+
+test
