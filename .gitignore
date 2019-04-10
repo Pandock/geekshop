@@ -2,6 +2,3 @@
 .idea
 *.sqlite3
 venv/
-
-
-test
