@@ -22,7 +22,7 @@ from django.conf.urls import include
 import mainapp.views as mainapp
 
 urlpatterns = [
-    url(r'^$', mainapp.index, name='index'),
+    url(r'^$', mainapp.index, name='main'),
     url(r'^products/', include('mainapp.urls', namespace='products')),
     url(r'^contact/', mainapp.contact, name='contact'),
     # url(r'^index', mainapp.index, name='index'),

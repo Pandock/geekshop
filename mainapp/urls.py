@@ -1,4 +1,3 @@
-from django.urls import path
 from django.conf.urls import url
 import mainapp.views as mainapp
 
