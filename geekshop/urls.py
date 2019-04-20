@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import include
 import mainapp.views as mainapp
+import authapp.views as authapp
 
 urlpatterns = [
     url(r'^$', mainapp.index, name='main'),
@@ -27,6 +28,7 @@ urlpatterns = [
     url(r'^contact/', mainapp.contact, name='contact'),
     # url(r'^index', mainapp.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^auth/', include('authapp.urls', namespace='auth'))
 ]
 
 if settings.DEBUG:
