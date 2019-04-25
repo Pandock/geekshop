@@ -28,7 +28,8 @@ urlpatterns = [
     url(r'^contact/', mainapp.contact, name='contact'),
     # url(r'^index', mainapp.index, name='index'),
     url(r'^admin/', admin.site.urls),
-    url(r'^auth/', include('authapp.urls', namespace='auth'))
+    url(r'^auth/', include('authapp.urls', namespace='auth')),
+    path('basket/', include('basketapp.urls', namespace='basket')),
 ]
 
 if settings.DEBUG:
